@@ -7,6 +7,10 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="./src/styles/style.css">
+
+  <style>
+    .active { border-bottom: 2px solid white; font-weight: bold 0.5rem; }
+  </style>
  
 </head>
 <body class="bg-gray-800 text-white">
@@ -14,7 +18,7 @@
     <div class="container mx-auto flex items-center justify-between relative z-10">
       <nav>
         <ul class="flex gap-16 space-x-10">
-          <li><a href="./home.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Home</a></li>
+          <li><a href="/index.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Home</a></li>
           <li><a href="#genero.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold active">Gênero</a></li>
           <li><a href="#maisassistidos.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Mais assistidos</a></li>
           <li><a href="#mangas.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Mangas</a></li>
@@ -79,6 +83,15 @@
           <img src="./image/sung jin woo.gif" alt="Solo Leveling" class="w-full h-64 object-cover">
           <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
             <span class="text-white text-2xl font-bold">Solo Leveling</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="kimetsu.html" class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300 cursor-pointer">
+        <div class="relative">
+          <img src="./image/kimetsu.jpg" alt="Kimetsu no Yaiba" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
+            <span class="text-white text-2xl font-bold">Kimetsu no Yaiba</span>
           </div>
         </div>
       </a>
