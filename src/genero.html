@@ -5,93 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assista animes | Leia Mangas</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="./src/styles/style.css">
-
   <style>
-    .active { border-bottom: 2px solid white; font-weight: bold 0.5rem; }
+    .active {
+      border-bottom: 2px solid white;
+      font-weight: bold;
+      border-radius: 0.5rem;
+    }
   </style>
- 
 </head>
 <body class="bg-gray-800 text-white">
   <header class="bg-purple-700 text-white py-4 relative">
     <div class="container mx-auto flex items-center justify-between relative z-10">
       <nav>
-        <ul class="flex gap-16 space-x-10">
-          <li><a href="#index.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Home</a></li>
+        <ul class="flex gap-16 space-x-5 text-2xl gap-32 mx-20">
+          <li><a href="../home.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Home</a></li>
           <li><a href="#genero.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold active">Gênero</a></li>
-          <li><a href="#maisassistidos.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Mais assistidos</a></li>
+          <li><a href="#preferidos.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Preferidos</a></li>
           <li><a href="#mangas.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Mangas</a></li>
           <li><a href="#feedback.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Feedback</a></li>
         </ul>
       </nav>
     </div>
-    <div class="border-b-8 border-red-900 absolute inset-0 bg-inherit" style="background-image: url('./image/sung jin woo.gif');"></div>
+    <div class="border-b-8 border-red-900 absolute inset-0 bg-cover " style="background-image: url('./imagens/sung jin woo.gif');"></div>
   </header>
 
-  <div class="flex flex-wrap justify-center gap-2 my-4">
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">0</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">1</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">2</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">3</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">4</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">5</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">6</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">7</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">8</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">9</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">A</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">B</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">C</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">D</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">E</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">F</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">G</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">H</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">I</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">J</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">K</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">L</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">M</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">N</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">O</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">P</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">Q</button>
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">R</button> 
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">S</button> 
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">T</button> 
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">U</button> 
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">V</button> 
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">W</button> 
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">X</button> 
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">Y</button> 
-    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2 hover:shadow-[0_0_10px_rgba(255,215,0,0.5)]">Z</button> 
+  <div class="flexb border-b-8 border-red-900 flex-wrap justify-between text-center p-5">
+    
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">0</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">1</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">2</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">3</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">4</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">5</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">6</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">7</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">8</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">9</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">A</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">B</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">C</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">D</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">E</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">F</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">G</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">H</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">I</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">J</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">K</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">L</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">M</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">N</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">O</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">P</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">Q</button>
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">R</button> 
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">S</button> 
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">T</button> 
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">U</button> 
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">V</button> 
+    <button class="bg-[#8B0000] text-white rounded-md px-3 py-2   ">W</button> 
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">X</button> 
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">Y</button> 
+    <button class="bg-[#8B0000] text-white rounded-md px-4 py-2   ">Z</button> 
   </div>
 
   <!-- Conteúdo da página -->
   <main class="container mx-auto py-8">
-    <h1 class="aqui text-3xl font-bold mb-4">Aqui você pode escolher diversas opções de animes, pode aproveitar que não tem anúncio!</h1>
+    <h1 class="text-3xl font-bold mb-4">Aqui você pode escolher diversas opções de animes, pode aproveitar que não tem anúncio!</h1>
     <a class="mb-8"></a>
     <!-- Adicione o conteúdo da sua página aqui -->
   </main>
 
-  <div id="animes" class="mt-8 p-8">
-    <h2 class="text-2xl font-bold mb-4">Animes Populares</h2>
+  <div class="mt-8">
+    <h2 class="text-2xl font-bold mb-4 mx-3">Animes Populares</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-      <a href="solo-leveling.html" class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300 cursor-pointer">
+      <a href="solo-leveling.html" class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300 cursor-pointer w-48 mx-4">
         <div class="relative">
-          <img src="./image/sung jin woo.gif" alt="Solo Leveling" class="w-full h-64 object-cover">
-          <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-            <span class="text-white text-2xl font-bold">Solo Leveling</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="kimetsu.html" class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300 cursor-pointer">
-        <div class="relative">
-          <img src="./image/kimetsu.jpg" alt="Kimetsu no Yaiba" class="w-full h-64 object-cover">
-          <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-            <span class="text-white text-2xl font-bold">Kimetsu no Yaiba</span>
+          <img src="./imagens/sung jin woo.gif" alt="Solo Leveling" class=" w-48 h-64 object-cover">
+          <div class="absolute inset-0 bg-white bg-opacity-10 hover:bg-opacity-50 transition-all duration-300 flex justify-center items-start">
+            <span class="text-emerald-500 text-2xl font-bold">Solo Leveling</span>
           </div>
         </div>
       </a>
