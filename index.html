@@ -5,30 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assista animes | Leia Mangas</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="./styles/style.css">
-
-<style>
-  .active { border-bottom: 2px solid white; font-weight: bold 0.5rem; }
-</style>
-
-
+  <style>
+    .active {
+      border-bottom: 2px solid white;
+      font-weight: bold;
+      border-radius: 0.5rem;
+    }
+  </style>
 </head>
 <body class="bg-gray-800 text-white">
   <header class="bg-purple-700 text-white py-4 relative">
     <div class="container mx-auto flex items-center justify-between relative z-10">
       <nav>
-        <ul class="flex gap-16 space-x-10">
-          <li><a href="/index.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold active">Home</a></li>
+        <ul class="flex gap-16 space-x-5 text-2xl gap-32 mx-20">
+          <li><a href="#home.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold active">Home</a></li>
           <li><a href="./src/genero.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Gênero</a></li>
-          <li><a href="#maisassistidos.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Mais assistidos</a></li>
+          <li><a href="#preferidos.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Preferidos</a></li>
           <li><a href="#mangas.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Mangas</a></li>
           <li><a href="#feedback.html" class="border-b-2 border-transparent hover:border-white transition-all duration-800 font-bold">Feedback</a></li>
         </ul>
       </nav>
     </div>
-    <div class="absolute inset-0 bg-inherit border-b-8 border-red-900" style="background-image: url('./src/image/sung jin woo.gif');"></div>
-  </header> 
+    <div class="absolute inset-0 bg-cover border-b-8 border-red-900" style="background-image: url('./src/imagens/sung jin woo.gif');"></div>
+  </header>
 
   <!-- Conteúdo da página -->
   <main class="container mx-auto py-8">
@@ -38,7 +37,7 @@
   </main>
 
   <script>
-    //opa, Seleciona todos os links de navegação
+    // Seleciona todos os links de navegação
     const navLinks = document.querySelectorAll('nav a');
 
     // Adiciona um event listener de clique a cada link
